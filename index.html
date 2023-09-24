@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Banking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Banking System</h1>
+        <div class="balance">
+            <h2>Your Balance: $<span id="balanceAmount">1000</span></h2>
+        </div>
+        <form action="transfer.php" method="post">
+            <label for="recipient">Recipient:</label>
+            <input type="text" id="recipient" name="recipient" required>
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" required>
+            <input type="submit" value="Transfer">
+        </form>
+    </div>
+</body>
+</html>
